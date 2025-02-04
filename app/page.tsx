@@ -1,7 +1,5 @@
+import Hero from "@/components/ui/hero";
+
 export default function Home() {
-	return (
-		<div className='font-[family-name:var(--font-geist-sans)]'>
-			My Portfolio
-		</div>
-	);
+	return <Hero />;
 }
