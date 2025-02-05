@@ -1,4 +1,4 @@
-import AboutSection from "@/components/ui/about-section";
+import AboutSection from "@/components/about-section";
 import Hero from "@/components/ui/hero";
 
 export default function Home() {
