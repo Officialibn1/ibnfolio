@@ -1,11 +1,13 @@
+import SectionTitle from "./ui/section-title";
+
 const AboutSection = () => {
 	return (
 		<section
 			id='about-me'
-			className='w-full bg-transparent px-5 my-20 lg:my-36 xl:my-48 tracking-wide leading-loose text-lg jus text-justify flex flex-col gap-3'>
-			<h1 className='relative z-10 text-5xl mb-5 md:text-4xl xl:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold tracking-wide w-full'>
+			className='w-full bg-transparent px-5 my-20 lg:my-36 xl:my-48 tracking-wide leading-loose text-lg text-justify flex flex-col gap-3'>
+			<SectionTitle>
 				About & Summary <br /> of Experience
-			</h1>
+			</SectionTitle>
 
 			<p className='text-neutral-400 max-w-2xl mx-auto md:text-xl  relative z-10 '>
 				I’m a Frontend developer with a proven track record of building modern
