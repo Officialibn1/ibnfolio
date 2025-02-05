@@ -10,7 +10,7 @@ const SectionTitle = ({ children, className }: Props) => {
 	return (
 		<h1
 			className={cn(
-				"relative z-10 text-5xl mb-10 md:text-4xl xl:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold tracking-wide w-full",
+				"relative z-10 mb-10 text-5xl  md:text-4xl xl:text-5xl  bg-clip-text text-transparent bg-gradient-to-b from-neutral-200 to-neutral-600  text-center font-sans font-bold tracking-wide w-full",
 				className,
 			)}>
 			{children}

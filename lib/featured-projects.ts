@@ -1,25 +1,106 @@
 interface Project {
 	title: string;
-	button: string;
-	src: string;
+	thumbnailUrls: string[];
+	previewUrl: string;
 	tags: string[];
 	githubUrl: string;
 }
 
-// export const projects: Project[] = [
+export const projects: Project[] = [
+	{
+		title: `Al-Qibla International Travel & Tours LTD.`,
+		thumbnailUrls: [
+			"alqibla-1.jpeg",
+			"alqibla-2.jpeg",
+			"alqibla-3.jpeg",
+			"alqibla-4.jpeg",
+			"alqibla-5.jpeg",
+			"alqibla-6.jpeg",
+		],
+		previewUrl: "https://www.alqibla-intl-travels.com/",
+		tags: [
+			"Svelte",
+			"SvelteKit",
+			"TypeScript",
+			"ShadCN-Svelte",
+			"Tailwind CSS",
+			"Zod",
+			"Vite",
+		],
+		githubUrl: "https://github.com/Officialibn1/al-qibla.git",
+	},
+	{
+		title: `Blog 99 & Blog Custom CMS`,
+		thumbnailUrls: [
+			"blog99-1.jpeg",
+			"blog99-2.jpeg",
+			"blog99-3.jpeg",
+			"blog99-4.jpeg",
+			"blog99-5.jpeg",
+			"blog99-6.jpeg",
+		],
+		previewUrl: "https://client-management-system-sigma.vercel.app/",
+		tags: [
+			"React",
+			"TypeScript",
+			"ShadCN",
+			"Tailwind CSS",
+			"Zod",
+			"Vite",
+			"GraphQL",
+			"Apollo Client",
+			"Hasura",
+			"PostgreSQL",
+			"MongoDB",
+			"Mongoose",
+			"NodeJS",
+			"JWT",
+			"Vercel",
+			"Firebase",
+			"Firebase-Auth",
+		],
+		githubUrl: "https://github.com/Officialibn1/client-management-system",
+	},
+	{
+		title: `Client Management System (CMS)`,
+		thumbnailUrls: [
+			"CM System-1.jpeg",
+			"CM System-2.jpeg",
+			"CM System-3.jpeg",
+			"CM System-4.jpeg",
+			"CM System-5.jpeg",
+			"CM System-6.jpeg",
+		],
+		previewUrl: "https://client-management-system-sigma.vercel.app/",
+		tags: [
+			"React",
+			"TypeScript",
+			"ShadCN",
+			"Tailwind CSS",
+			"Zod",
+			"Vite",
+			"GraphQL",
+			"Apollo Client",
+			"Hasura",
+			"PostgreSQL",
+			"MongoDB",
+			"Mongoose",
+			"NodeJS",
+			"JWT",
+			"Vercel",
+			"Firebase",
+			"Firebase-Auth",
+		],
+		githubUrl: "https://github.com/Officialibn1/client-management-system",
+	},
+];
 
+// export const projects: Project[] = [
 // 	{
 // 		title: `Al-Qibla International Travel & Tours LTD.`,
 // 		button: "View Project",
-// 		thumbnailUrls: [
-// 			"alqibla-1.jpeg",
-// 			"alqibla-2.jpeg",
-// 			"alqibla-3.jpeg",
-// 			"alqibla-4.jpeg",
-// 			"alqibla-5.jpeg",
-// 			"alqibla-6.jpeg",
-// 		],
-// 		src: "https://www.alqibla-intl-travels.com/",
+
+// 		previewUrl: "alqibla-1.jpeg",
 // 		tags: [
 // 			"Svelte",
 // 			"SvelteKit",
@@ -32,17 +113,10 @@ interface Project {
 // 		githubUrl: "https://github.com/Officialibn1/al-qibla.git",
 // 	},
 // 	{
-// 		title: `Blog 99 & Blog Custom CMS`,
+// 		title: `Blog 99 &  CMS`,
 // 		button: "View Project",
-// 		thumbnailUrls: [
-// 			"blog99-1.jpeg",
-// 			"blog99-2.jpeg",
-// 			"blog99-3.jpeg",
-// 			"blog99-4.jpeg",
-// 			"blog99-5.jpeg",
-// 			"blog99-6.jpeg",
-// 		],
-// 		src: "https://client-management-system-sigma.vercel.app/",
+
+// 		previewUrl: "blog99-1.jpeg",
 // 		tags: [
 // 			"React",
 // 			"TypeScript",
@@ -67,15 +141,8 @@ interface Project {
 // 	{
 // 		title: `Client Management System (CMS)`,
 // 		button: "View Project",
-// 		thumbnailUrls: [
-// 			"CM System-1.jpeg",
-// 			"CM System-2.jpeg",
-// 			"CM System-3.jpeg",
-// 			"CM System-4.jpeg",
-// 			"CM System-5.jpeg",
-// 			"CM System-6.jpeg",
-// 		],
-// 		src: "https://client-management-system-sigma.vercel.app/",
+
+// 		previewUrl: "CM System-1.jpeg",
 // 		tags: [
 // 			"React",
 // 			"TypeScript",
@@ -98,74 +165,3 @@ interface Project {
 // 		githubUrl: "https://github.com/Officialibn1/client-management-system",
 // 	},
 // ];
-
-export const projects: Project[] = [
-	{
-		title: `Al-Qibla International Travel & Tours LTD.`,
-		button: "View Project",
-
-		src: "alqibla-1.jpeg",
-		tags: [
-			"Svelte",
-			"SvelteKit",
-			"TypeScript",
-			"ShadCN-Svelte",
-			"Tailwind CSS",
-			"Zod",
-			"Vite",
-		],
-		githubUrl: "https://github.com/Officialibn1/al-qibla.git",
-	},
-	{
-		title: `Blog 99 & Blog Custom CMS`,
-		button: "View Project",
-
-		src: "blog99-1.jpeg",
-		tags: [
-			"React",
-			"TypeScript",
-			"ShadCN",
-			"Tailwind CSS",
-			"Zod",
-			"Vite",
-			"GraphQL",
-			"Apollo Client",
-			"Hasura",
-			"PostgreSQL",
-			"MongoDB",
-			"Mongoose",
-			"NodeJS",
-			"JWT",
-			"Vercel",
-			"Firebase",
-			"Firebase-Auth",
-		],
-		githubUrl: "https://github.com/Officialibn1/client-management-system",
-	},
-	{
-		title: `Client Management System (CMS)`,
-		button: "View Project",
-
-		src: "CM System-1.jpeg",
-		tags: [
-			"React",
-			"TypeScript",
-			"ShadCN",
-			"Tailwind CSS",
-			"Zod",
-			"Vite",
-			"GraphQL",
-			"Apollo Client",
-			"Hasura",
-			"PostgreSQL",
-			"MongoDB",
-			"Mongoose",
-			"NodeJS",
-			"JWT",
-			"Vercel",
-			"Firebase",
-			"Firebase-Auth",
-		],
-		githubUrl: "https://github.com/Officialibn1/client-management-system",
-	},
-];
