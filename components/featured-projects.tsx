@@ -27,7 +27,7 @@ const FeaturedProjects = () => {
 					duration: 0.8,
 					ease: "easeInOut",
 				}}
-				viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+				viewport={{ once: true }}
 				className='mb-8 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center text-3xl font-bold tracking-tight text-transparent md:text-6xl'>
 				Featured Projects
 			</motion.h1>
@@ -42,7 +42,7 @@ const FeaturedProjects = () => {
 							duration: 0.5,
 							ease: "easeIn",
 						}}
-						viewport={{ once: true, margin: "0px 0px -100px 0px" }}
+						viewport={{ once: true }}
 						className='h-full '>
 						<Card className='w-full h-full bg-transparent backdrop-blur-md border-muted-foreground overflow-hidden rounded-2xl p-4'>
 							<CardContent className='p-0 w-full overflow-hidden rounded-lg mb-4 border border-muted-foreground'>
