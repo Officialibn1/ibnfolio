@@ -104,7 +104,6 @@ export const projects: Project[] = [
 		previewUrl: "https://ninety9store.vercel.app/",
 		tags: [
 			"React",
-			"NextJS",
 			"TypeScript",
 			"ShadCN",
 			"Tailwind CSS",
@@ -113,6 +112,10 @@ export const projects: Project[] = [
 			"Aceternity UI",
 			"Vercel",
 			"Stripe",
+			"Strapi CMS",
+			"PostgreSQL",
+			"Hasura",
+			"Apollo Client",
 		],
 		githubUrl: "https://github.com/Officialibn1/99store",
 	},
