@@ -1,4 +1,5 @@
 import AboutSection from "@/components/about-section";
+import ContactMe from "@/components/contact-me";
 import FeaturedProjects from "@/components/featured-projects";
 import Footer from "@/components/footer";
 import ProfessionalExperience from "@/components/professional-experience-section";
@@ -17,6 +18,8 @@ export default function Home() {
 			<SkillsSection />
 
 			<ProfessionalExperience />
+
+			<ContactMe />
 
 			<Footer />
 		</>

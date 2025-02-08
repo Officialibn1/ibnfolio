@@ -28,7 +28,7 @@ const FeaturedProjects = () => {
 					ease: "easeInOut",
 				}}
 				viewport={{ once: true }}
-				className='mb-8 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center text-3xl font-bold tracking-tight text-transparent md:text-6xl'>
+				className=' absolute top-8 mb-8 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text text-center text-3xl font-bold tracking-tight text-transparent md:text-6xl'>
 				Featured Projects
 			</motion.h1>
 

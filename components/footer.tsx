@@ -9,6 +9,7 @@ import {
 	FaUpwork,
 	FaXTwitter,
 } from "react-icons/fa6";
+import { SparklesCore } from "./ui/particles";
 
 type FooterSocials = {
 	name: string;
@@ -41,7 +42,7 @@ const footerSocials: FooterSocials[] = [
 
 const Footer = () => {
 	return (
-		<footer className='flex flex-col gap-10 items-center text-center'>
+		<footer className='flex flex-col gap-10 items-center text-center relative'>
 			<Separator className='bg-muted-foreground' />
 
 			<div className='flex flex-col gap-5'>
@@ -49,7 +50,7 @@ const Footer = () => {
 
 				<h2 className='text-muted-foreground text-lg'>FRONTEND DEVELOPER</h2>
 
-				<ul className=' justify-center flex-wrap space-x-2 flex-1 hidden md:flex'>
+				<ul className=' flex justify-center gap-5 '>
 					{footerSocials.map((icon, i) => (
 						<li
 							key={`${icon.name}-${i}`}
@@ -62,6 +63,18 @@ const Footer = () => {
 						</li>
 					))}
 				</ul>
+			</div>
+
+			<div className='w-full absolute inset-0 h-full '>
+				<SparklesCore
+					id='tsparticlesfullpage'
+					background='transparent'
+					minSize={0.6}
+					maxSize={1.4}
+					particleDensity={100}
+					className='w-full h-full'
+					particleColor='#c084fc'
+				/>
 			</div>
 
 			<span className='text-xs font-thin text-muted-foreground w-full bg-white py-3'>
