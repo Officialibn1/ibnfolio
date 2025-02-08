@@ -46,14 +46,14 @@ const footerSocials: FooterSocials[] = [
 
 export const Navbar = () => {
 	return (
-		<nav className='sticky top-4 z-30 bg-foreground/30 shadow-xl backdrop-blur-md rounded-full p-2 md:p-5 border border-gray-600 w-11/12 max-w-4xl self-center mx-5 flex justify-between items-center'>
+		<nav className='sticky top-4 z-30 bg-foreground/30 shadow-xl backdrop-blur-md rounded-full p-2 md:p-5 border border-muted-foreground w-11/12 max-w-4xl self-center mx-5 flex justify-between items-center'>
 			<div className='flex-1'>
 				<Avatar>
 					<AvatarImage
 						src='https://avatars.githubusercontent.com/u/111536474?v=4'
 						alt='@ibn'
 					/>
-					<AvatarFallback>IBN</AvatarFallback>
+					<AvatarFallback className='text-black text-sm'>IBN</AvatarFallback>
 				</Avatar>
 			</div>
 			<ul className=' justify-center space-x-3 md:space-x-5 tracking-wider text-lg font-medium -1 hidden md:flex '>
@@ -86,7 +86,7 @@ export const Navbar = () => {
 				{footerSocials.map((icon, i) => (
 					<li
 						key={`${icon.name}-${i}`}
-						className='border border-gray-800 rounded-full p-2 hover:text-indigo-700 hover:border-indigo-700  ease-in-out cursor-pointer'>
+						className='border border-gray-200 rounded-full p-2 hover:text-indigo-700 hover:border-indigo-700  ease-in-out cursor-pointer'>
 						<Link
 							href={icon.url}
 							target='_Blank'>

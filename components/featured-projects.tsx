@@ -85,7 +85,7 @@ const FeaturedProjects = () => {
 					maxSize={1.4}
 					particleDensity={100}
 					className='w-full h-full'
-					particleColor='#c084fc'
+					particleColor='#fff'
 				/>
 			</div>
 		</section>
