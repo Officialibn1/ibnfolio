@@ -26,9 +26,25 @@ import { Textarea } from "@/components/ui/textarea";
 import { Separator } from "@/components/ui/separator";
 
 const schema = z.object({
-	name: z.string().min(5, "Please enter your full name"),
-	email: z.string().email(),
-	companyName: z.string().min(5, "Please enter your companies/business name"),
+	name: z
+		.string({
+			required_error: "Please enter your full name",
+		})
+		.min(5, "Please enter your full name"),
+	email: z
+		.string({
+			required_error: "Enter a valid email address",
+		})
+		.email({
+			message: "Enter a valid email address",
+		}),
+	companyName: z
+		.string({
+			required_error: "Please enter your companies/business name",
+		})
+		.min(5, {
+			message: "Please enter your companies/business name",
+		}),
 	projectType: z.enum(
 		[
 			"E-Commerce",
@@ -70,10 +86,14 @@ const schema = z.object({
 		},
 	),
 	estimatedProjectBudget: z
-		.number()
+		.number({
+			required_error: "Your budget should be more than $70.",
+		})
 		.min(50, "Your budget should be more than $70."),
 	projectDetails: z
-		.string()
+		.string({
+			required_error: "Please add more content to the projects description.",
+		})
 		.min(150, "Please add more content to the projects description."),
 });
 
@@ -114,11 +134,11 @@ const ProjectEnquieryform = () => {
 								/>
 							</FormControl>
 
+							<FormMessage />
+
 							<FormDescription>
 								Please type your first amd last names
 							</FormDescription>
-
-							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -157,12 +177,12 @@ const ProjectEnquieryform = () => {
 								/>
 							</FormControl>
 
+							<FormMessage />
+
 							<FormDescription>
 								Please type the official name of your company, business or
 								organization.
 							</FormDescription>
-
-							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -183,11 +203,11 @@ const ProjectEnquieryform = () => {
 								/>
 							</FormControl>
 
+							<FormMessage />
+
 							<FormDescription>
 								Please type the budget for the project in Dollars ($).
 							</FormDescription>
-
-							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -250,6 +270,8 @@ const ProjectEnquieryform = () => {
 									))}
 								</SelectContent>
 							</Select>
+
+							<FormMessage />
 						</FormItem>
 					)}
 				/>
@@ -268,11 +290,12 @@ const ProjectEnquieryform = () => {
 								/>
 							</FormControl>
 
+							<FormMessage />
+
 							<FormDescription>
 								Give me more details about your project so that I can come up
 								with the best approach for it.
 							</FormDescription>
-							<FormMessage />
 						</FormItem>
 					)}
 				/>
