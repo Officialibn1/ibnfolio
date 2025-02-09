@@ -51,6 +51,8 @@ const FeaturedProjects = () => {
 									className='w-full'
 									width={400}
 									height={200}
+									loading='lazy'
+									placeholder='blur'
 									alt='Project Thumbnail'
 								/>
 							</CardContent>
