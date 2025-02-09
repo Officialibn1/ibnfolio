@@ -43,7 +43,7 @@ const footerSocials: FooterSocials[] = [
 const Footer = () => {
 	return (
 		<footer className='flex flex-col gap-10 items-center text-center relative'>
-			<Separator className='bg-muted-foreground' />
+			<Separator className='bg-neutral-800' />
 
 			<div className='flex flex-col gap-5'>
 				<SectionTitle className='mb-1'>Isah Ibn Muhammad</SectionTitle>
@@ -77,8 +77,8 @@ const Footer = () => {
 				/>
 			</div>
 
-			<span className='text-xs font-thin text-muted-foreground w-full bg-white py-3'>
-				&copy; ibn&apos;s portfolio 2025
+			<span className='text-xs font-thin text-muted-foreground w-full  py-3'>
+				&copy; Isah Ibn Muhammad&apos;s Portfolio 2025
 			</span>
 		</footer>
 	);
